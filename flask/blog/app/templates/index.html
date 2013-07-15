@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Olá, {{g.user.username}}! </h1>
+{% include 'flash.html' %}
+
+<form action="" method="post" name="post">
+    {{form.hidden_tag()}}
+    Poste sua ideia: <br />
+    {{ form.content(size = 30, maxlength = 120) }}
+    {% for error in form.errors.content %}
+    <span class="color: red;">[{{error}}]</span><br />
+    {% endfor %}
+    <input type="submit" value="Postar">
+</form>
+
+
+{% for post in posts %}
+<div><p>{{post.author.username}} disse: <strong>{{post.content}} </strong> em {{post.timestamp.strftime('%d-%m%Y')}}</p></div>
+{% endfor %}
+
+{% endblock %}
