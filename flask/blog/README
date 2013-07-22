@@ -1,3 +1,10 @@
 Bem-vindos a oficina de Flask apresentada no Bunker 360.
 
 A primeira parte foi apresentada no dia 14/07/2013.
+
+Utilização:
+*   clone o projeto.
+*   certifique-se de criar um virtualenv e instalar todas as dependências com pip (ou outro instalador de pacotes ou manualmente, como preferir).
+*   execute o arquivo create_db.py.
+
+Parte 1 (14/07/2013).

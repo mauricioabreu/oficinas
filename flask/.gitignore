@@ -1,0 +1,5 @@
+*.pyc
+blog/tmp/*
+blog/app.db
+blog/HOWTO
+blog/flask
